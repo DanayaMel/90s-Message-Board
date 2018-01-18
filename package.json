@@ -1,0 +1,25 @@
+{
+  "name": "90s-message-board",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DanayaMel/90s-Message-Board.git"
+  },
+  "author": "Danaya & Chanice",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DanayaMel/90s-Message-Board/issues"
+  },
+  "homepage": "https://github.com/DanayaMel/90s-Message-Board#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "cookie-session": "^2.0.0-beta.3",
+    "express": "^4.16.2",
+    "handlebars": "^4.0.11"
+  }
+}
