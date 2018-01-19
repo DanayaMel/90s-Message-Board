@@ -1,5 +1,3 @@
-<!doctype html>
-
 <head>
 
 </head>
@@ -12,19 +10,23 @@
 
 	<h2 class="heading">
    </h2>
-	<form action="/myaction" method="post">
+	<form action="/" method="post">
 		<fieldset>
 			<label for="name">Name:</label>
 			<input type="text" id="name" name="name" placeholder="Enter your full name" />
 
 			<label for="message">Message:</label>
-			<textarea type="text" id="message" placeholder="What's on your mind?"></textarea>
+			<textarea type="text" id="message" name="message" placeholder="What's on your mind?"></textarea>
 
 			<input type="submit" value="Send message" />
 
 		</fieldset>
 	</form>
-	<button>Submit</button>
+
+	<script id="Message" type="text/x-handlebars-template">
+		{{#each this}} This is your Message {{message}} {{/each}}
+	</script>
+	<p class="message"></p>
 
 	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
 	<script src="http://cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.min.js"></script>
