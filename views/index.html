@@ -1,74 +1,36 @@
-<!-- <!DOCTYPE html>
-<html>
 <head>
-	<title></title>
+
 </head>
+
 <body>
-	  <h2>The List of Shoes</h2>
-  <ul class="shoesNav">
-  </ul>
+	<h1>Welcome to the Message Board!</h1>
+	<script id="Username" type="text/x-handlebars-template">
+		{{#each this}} Enter your Message {{name}} {{/each}}
+	</script>
 
-  <h2>The List of Celebrities</h2>
-  <ul class="people">
-  </ul>
+	<h2 class="heading">
+   </h2>
+	<form action="/" method="post">
+		<fieldset>
+			<label for="name">Name:</label>
+			<input type="text" id="name" name="name" placeholder="Enter your full name" />
 
-  <h2>Grader</h2>
-  <ul class="grader-results">
-  </ul>
+			<label for="message">Message:</label>
+			<textarea type="text" id="message" name="message" placeholder="What's on your mind?"></textarea>
 
-  <h2>Student Scores</h2>
-  <ul class="student-score-results">
+			<input type="submit" value="Send message" />
 
-  </ul>
-
-  <script id="shoe-template" type="text/x-handlebars-template">
-    {{#each allShoes}}
-    <li class="shoes">
-      <span class="shoe-name"> {{ name }} - </span> price: {{ price }} {{> description}}
-    </li>
-    {{/each}}
-  </script>
-
-<h1>Message Board</h1>
-<div class = "content" >
-</div>
-	<form>
-		<script id="Handlebars-Template" type="text/x-handlebars-template">
-			<h3  class = "cities">Welcome back {{city}}</h3>
-		</script>
-		<label>Message:</label>
-		<input type="text" name="">
-		<button>Send Message</button>
+		</fieldset>
 	</form>
 
-   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.min.js"></script>
+	<script id="Message" type="text/x-handlebars-template">
+		{{#each this}} This is your Message {{message}} {{/each}}
+	</script>
+	<p class="message"></p>
 
- <script type="text/javascript" src="../handleBar.js"></script>
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.min.js"></script>
+	<script src="handleBar.js"></script>
 </body>
-</html>
- -->
-	
 
-<!doctype html>
-  <head>
-
-  </head>
-  <body>
-  	<h1>Welcome to the Message Board!</h1>
-    <script id="Username" type="text/x-handlebars-template">
-    Enter your Message {{name}}
-</script>
-   
-    <h2 class="Heading">
-   </h2>
- <input type="text" name="">
- <button>Submit</button>
-
-
-
-    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.min.js"></script>
-    <script src="../handleBar.js"></script>
-  </body>
 </html>
